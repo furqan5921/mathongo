@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "type": "module",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -20,7 +21,7 @@
     "ioredis": "^5.3.2",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.4",
-    "nanoid": "^4.0.2"
+    "nanoid": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

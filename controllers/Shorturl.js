@@ -1,8 +1,9 @@
+
 const ShortUrl = require("../models/shortUrl");
 const User = require("../models/user");
+const {nanoid} =require("nanoid")
 
-const { nanoid } = require("nanoid");
-const { limiter, cacheMiddleware } = require("../middlewares/shortUrl");
+
 
 
 const generateShortUrl = async (req, res) => {

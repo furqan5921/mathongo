@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { generateShortUrl } = require("../controllers/shortUrlController");
+const { generateShortUrl } = require("../controllers/Shorturl");
 const { limiter, cacheMiddleware } = require("../middlewares/shortUrl");
 const { authenticateToken } = require("../middlewares/auth");
 
