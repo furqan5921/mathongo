@@ -13,7 +13,7 @@ app.use("/users", userRouter)
 app.use("/shortenURL", shortUrlRouter)
 
 
+DBconnection()
 app.listen(PORT, () => {
-    DBconnection()
     console.log(`server listening on port ${PORT}`)
 })
