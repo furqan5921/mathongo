@@ -1,6 +1,6 @@
 const rateLimit = require("express-rate-limit");
 const Redis = require("ioredis");
-const redisClient = new Redis();
+const redisClient = new Redis(process.env.REDIS_URL);
 
 const limiter = rateLimit({
   store: new RedisStore({
